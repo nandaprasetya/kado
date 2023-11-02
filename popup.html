@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        color: #f1f1f1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #121212;
+      }
+
+      .mail {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+      }
+
+      .mail img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        margin-top: 10px;
+      }
+
+      h3{
+        color: turquoise;
+        /* font-size: 23px !important; */
+      }
+
+      @media screen and (max-width: 768px) {
+        h3{
+          font-size: 18px !important;
+        }
+      }
+    </style>
+    <div id="open" class="mail">
+      <img src="img/open.png" alt="" />
+    </div>
+    <h1>Klik Pesannya</h1>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      $("#open").click(function () {
+        Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/4c/36/d5/4c36d5b77964bab40b7073591929c8ca.jpg" style="width:90%;">', 
+          title: "<h3>Hai Kak</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/3d/4d/2d/3d4d2d090c8475911d8cc0092622a93e.jpg" style="width:90%;">', 
+          title: "<h3>Tau Ga Yang lebih cantik daripada anya geraldine</h3>",
+          timer: 4000,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="img/yasia.jpeg" style="width:90%;">', 
+          title: "<h3>Anya kamuuuu</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/c3/2d/5c/c32d5c63a44a48c86597d5c69743f0cb.jpg" style="width:90%;">', 
+          title: "<h3>mwuheehehee</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/84/af/0c/84af0cce15eaab6cf262b4907a25e8b4.jpg" style="width:90%;">', 
+          title: "<h3>Kaboooorrrrr</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/17/cd/3b/17cd3b3bdd75f2674b8bea3ff933c660.jpg" style="width:90%;">', 
+          title: "<h3>Maap Kak</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/eb/b3/5f/ebb35f5c41a52b88907cc1b6948bf3cf.jpg" style="width:90%;">', 
+          title: "<h3>Tapi kok insecure sih</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/b2/45/0d/b2450d71b7b7b78a6f1abbc0bcd5a913.jpg" style="width:90%;">', 
+          title: "<h3>Padahal cantik gitu</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/736x/47/03/00/4703009f2267bccb6cedb6399154e6e8.jpg" style="width:90%;">', 
+          title: "<h3>Liat aku buriq gini</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/5f/40/c0/5f40c0e0b00292296d61021cc0c089fe.jpg" style="width:90%;">', 
+          title: "<h3>Kurang cantik apalagi coba</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/8a/92/de/8a92de38f9268bd7a9b8fc3d03f4d792.jpg" style="width:90%;">', 
+          title: "<h3>Jangan Insecure lagi ya kak</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/57/5b/8a/575b8adeba45378412dd83fed1c8b2e6.jpg" style="width:90%;">', 
+          title: "<h3>Wllleeeeee</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/a3/6e/a9/a36ea9c29433c1d30391a96e6857ffe9.jpg" style="width:90%;">', 
+          title: "<h3>Maap Gajelas kak</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+          Swal.fire({
+          html: '<img src="https://i.pinimg.com/564x/05/fc/fc/05fcfc2649dda7a2abafe03a9846c546.jpg" style="width:90%;">', 
+          title: "<h3>Dah segitu aja Babayyyy</h3>",
+          timer: 2500,
+          timerProgressBar: true,
+          showConfirmButton: false, // Sembunyikan tombol OK
+        }).then(() => {
+
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+        });
+      });
+    </script>
+  </body>
+</html>
