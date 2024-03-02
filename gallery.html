@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url('img/2151120956.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .open{
+            width: 100%;
+            height: 100vh;
+            background-image: url('img/9259344.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s ease;
+        }
+
+        .open-btn{
+            width: fit-content;
+            height: 50px;
+            padding: 10px 30px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+        }
+
+        .open-btn img{
+            height: 100%;
+            aspect-ratio: 1/1;
+            margin-right: 10px;
+        }
+
+        .gallery{
+            width: 100%;
+            min-height: 100vh;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery img{
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .open.none{
+            transform: translateY(-200%);
+            transition: 0.5s ease;
+        }
+
+        @media screen and (max-width: 500px) {
+            .gallery img{
+                width: 90%;
+            }
+        }
+    </style>
+    <div class="open">
+        <div class="open-btn">
+            <img src="img/open.png" alt="">
+            Click Here !!
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="img/yasia.jpeg" alt="">
+        <img src="img/yasia2.jpeg" alt="">
+        <img src="img/yasia3.jpeg" alt="">
+    </div>
+    <audio id="audio" src="asset/JVKE - golden hour (official music video).mp3"></audio>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" ></script>
+    <script>
+        console.log("Hii, Kok liat kesini ?");
+        $(document).ready(function(){
+            let audio = $("#audio").get(0);
+        $(".open-btn").click(function(){
+            $(".open").addClass("none");
+            audio.play();
+        });
+    });
+    </script>
+</body>
+</html>
